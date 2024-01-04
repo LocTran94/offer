@@ -1,0 +1,356 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+
+    .offer {
+      padding: 200px 259.64px 200px 260px;
+      background-color: #274C5B;
+      width: 1920px;
+      height: 1050px;
+    }
+
+    .offer__inner {
+      width: 1400.361px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+
+
+    .offer__top {
+      display: flex;
+      align-items: flex-end;
+      gap: 564px;
+      width: 1400px;
+    }
+
+
+    .offer__bottom {
+      display: flex;
+      gap: 20px;
+      width: 1400.361px;
+      align-items: flex-start;
+    }
+
+    .offer__left {
+      display: flex;
+      flex-direction: column;
+      width: 580px;
+      gap: 8px;
+      align-items: flex-start
+    }
+
+
+    .button--yellow{
+      color: #274C5B;
+      background: #EFD372;
+      border: 2px solid #EFD372;
+    }
+
+    .button--yellow:hover{
+      background:#fff;
+      color: #EFD372;
+    }
+
+
+
+    .button--yellow:hover i{
+      color: #EFD372;
+    }
+    button{
+      width:256px;
+      height:79px;
+      padding: 28.39px;
+      border-radius:16px;
+      background-color: #EFD372;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      font-size: 20px;
+      font-weight:700;
+      font-family: Roboto,serif;
+      color: #274C5B;
+      gap:10px;
+    }
+
+    .button i{
+      width:19px;
+      height:19px;
+      border-radius: 50%;
+      background-color:#335B6B
+    }
+
+
+    .offer__left:nth-child(1){
+      color: #7EB693;
+      font-family: Yellowtail,serif;
+      font-size: 36px;
+      font-weight:400;
+    }
+
+
+    .offer__left:nth-child(2){
+      color:#FFF;
+      font-family:roboto,serif;
+      font-size: 50px;
+      font-weight:800;
+    }
+
+
+    .offter__product{
+      width:385px;
+      height:483px;
+      border-radius:30px;
+      background: #F9F8F8;
+    }
+
+
+    .offer__vegetable{
+      width: 96px;
+      height:31px;
+      border-radius: 8px;
+      background: #274C5B;
+      margin-top: 29px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      padding: 5px 12px 6px 12px;
+      align-items:center;
+    }
+
+    .offer__image{
+      width:413.963px;
+      height: 310px;
+      background-blend-mode: multiply;
+    }
+
+    .offer__detail{
+      width:278.997px;
+      height: 67px;
+      margin-left: 30px;
+      margin-bottom: 17px;
+      margin-right: 26px;
+      display:flex;
+      flex-direction:column;
+      gap:13px;
+      align-items: flex-start;
+    }
+
+
+    .offer__vegetable p{
+      color: #FFF;
+      font-family: Open Sans,serif;
+      font-size: 15px;
+      font-weight:600;
+    }
+    
+    
+    .offer__detail P{
+      color: #274C5B;
+      font-size: 20px;
+      font-family: Roboto,serif;
+      font-weight: 600;
+
+    }
+
+
+    .offer__detail hr{
+      width: 274.988px;
+      height:0px;
+      color: #DEDDDD;
+      margin-bottom:6px;
+    }
+
+
+    .offer__rating{
+      display:flex;
+      gap:81px;
+      width:278.998px;
+    }
+
+    .offer__rating__left{
+      width:113px;
+      height:25px;
+      margin: auto 0px;
+    }
+
+
+    .offer__rating__left:nth-child(1){
+      font-size: 15px;
+      color: #B8B8B8;
+      font-family: Open Sans,serif;
+      font-weight: 600;
+    }
+
+
+    .offer__rating__left:nth-child(2){
+      color: #274C5B;
+      text-align:center;
+      font-size: 18px;
+      font-family: Open Sans,serif;
+      font-weight: 700;
+    }
+
+
+    .offer__rating__right{
+      width: 83.998px;
+      height: 18.375px;
+      display:flex;
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="offer">
+  <div class="offer__inner">
+
+    <div class="offer__top">
+
+      <div class="offer__left">
+        <p
+
+        >    Offer                </p>
+        <p>We Offer Organic For You</p>
+      </div>
+      <button >View All Product<i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="offer__bottom">
+      <div class="offter__product">
+        <div class="offer__vegetable">
+          <p>vegetable</p>
+        </div>
+        <div class="offer__image">
+          <img src="./public/Image.png" alt="">
+        </div>
+
+        <div class="offer__detail">
+          <P>Mung Bean</P>
+          <hr>
+          <div class="offer__rating">
+            <div class="offer__rating__left">
+              <p>$20.00</p>
+              <p>$11.00</p>
+            </div>
+            <div class="offer__rating__right">
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="offter__product">
+        <div class="offer__vegetable">
+          <p>vegetable</p>
+        </div>
+        <div class="offer__image">
+          <img src="./public/Photo2.png" alt="">
+        </div>
+
+        <div class="offer__detail">
+          <P>Mung Bean</P>
+          <hr>
+          <div class="offer__rating">
+            <div class="offer__rating__left">
+              <p>$20.00</p>
+              <p>$11.00</p>
+            </div>
+            <div class="offer__rating__right">
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="offter__product">
+        <div class="offer__vegetable">
+          <p>vegetable</p>
+        </div>
+        <div class="offer__image">
+          <img src="./public/Image3.png" alt="">
+        </div>
+
+        <div class="offer__detail">
+          <P>Mung Bean</P>
+          <hr>
+          <div class="offer__rating">
+            <div class="offer__rating__left">
+              <p>$20.00</p>
+              <p>$11.00</p>
+            </div>
+            <div class="offer__rating__right">
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="offter__product">
+        <div class="offer__vegetable">
+          <p>vegetable</p>
+        </div>
+        <div class="offer__image">
+          <img src="./public/Image4.png" alt="">
+        </div>
+
+        <div class="offer__detail">
+          <P>Mung Bean</P>
+          <hr>
+          <div class="offer__rating">
+            <div class="offer__rating__left">
+              <p>$20.00</p>
+              <p>$11.00</p>
+            </div>
+            <div class="offer__rating__right">
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+              <i class="fa-solid fa-star" style="color: #ffa858;"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+
+</html>
